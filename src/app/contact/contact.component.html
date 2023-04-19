@@ -1,0 +1,27 @@
+<section class="section contact" id="contact">
+  <div class="container">
+    <p class="section-subtitle">Contact Me</p>
+    <h2 class="h2 text-center">Drop Me a Mail</h2>
+    <div class="contact-card">
+
+
+
+      <div class="container text-center">
+
+        <form action=""  (submit)="sendEmail($event)">
+
+          <input type="text" name="user_name" placeholder="Name" required class="contact-input">
+
+          <input type="email" name="user_email" placeholder="Email" required class="contact-input">
+
+          <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+
+          <!-- <button type="submit" class="btn-submit">Submit Message</button> -->
+          <button type="submit" class="btn btn-danger ">Send</button>
+        </form>
+      </div>
+
+    </div>
+<br>
+  </div>
+</section>

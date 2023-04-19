@@ -1,0 +1,46 @@
+ <section id="portfolio">
+
+  <p class="section-subtitle">My Projects</p>
+
+  <h2 class="h2 section-title">I love Developing my Skills Regularly</h2>
+    <div class="container" *ngFor="let q of projects">
+      <div class="contact-card">
+        <div class="card-body">
+      <div class="card-content">
+        <div class="card-subtitle">
+          {{q.title}}
+        </div>
+        <div class="card-title">
+          <span style="color: hsl(7, 96%, 61%);">
+          {{q.technologies}}
+</span>
+        </div>
+
+      <div class="card-title">
+        {{q.description}}
+      </div>
+      <a href={{q.link}} target="_blank"><button  class="btn btn-danger">{{q.button}}</button></a>
+      </div>
+    </div>
+      </div>
+      <br>
+    </div>
+
+  </section>
+<!--<div class="container">
+  <ul class="portfolio-list" *ngFor="let project of projects">
+    <li>
+        <div class="contact-card">
+
+        <div class="card-content">
+          <p class="card-subtitle">{{ project.title }}</p>
+
+          <h3 class="h3 card-title">{{ project.technologies }}</h3>
+          <h3 class="hero-text">{{ project.description }}</h3>
+        </div>
+        <br>
+      </div>
+    </li>
+  </ul>
+</div>
+</section> -->

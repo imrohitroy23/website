@@ -1,0 +1,25 @@
+<section class="section skills" id="skills">
+  <div class="container">
+    <p class="section-subtitle">My Skills</p>
+
+
+
+       <div class="contact-card">
+    <div class="container" *ngFor="let q of skills">
+      <h1 class="mt-5">{{q.name}}</h1>
+      {{q.level}}
+
+      <div class="progress mt-5">
+        <div
+          class="progress-bar bg-danger"
+          role="progressbar"
+          [ngStyle]="{width: q.rating +'%'}"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        ></div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
